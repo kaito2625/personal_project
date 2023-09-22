@@ -18,7 +18,7 @@ class commentsSeeder extends Seeder
     public function run()
     {
         for ($i = 1; $i <= 20; $i++){
-            Comment::class([
+            Comment::create([
                 'user_id' => 1,
                 'tweet_id' => $i,
                 'text' => 'これはテストコメント' .$i,

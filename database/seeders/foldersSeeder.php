@@ -15,15 +15,13 @@ class foldersSeeder extends Seeder
      */
     public function run()
     {
-        $tiles = ['プライベート', '仕事'];
-        
-        foreach ($titles as $title){
-            DB::table('folders')->insert([
-                'title' => $title,
+       
+            folders::create([
+                'title' => '項目',
                 'deleted_at' => Carbon::now(),
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
             ]);
         }
     }
-}
+
