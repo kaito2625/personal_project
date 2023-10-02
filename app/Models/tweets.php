@@ -25,4 +25,9 @@ class tweets extends Model
     public function comments(){
         return $this->hasMany(comments::class);
     }
+    
+    public function getTimeLines(Int $user_id){
+        return $this->WhereIn('user_id')->orderBy('created_at','DESC')->paginate(30);
+    }
+   
 }

@@ -18,16 +18,16 @@ class usersSeeder extends Seeder
      */
     public function run()
     {
-        for ($i = 1; $i <= 20; $i++) {
-            users::create([
-                'name' => 'user' .$i,
+       
+            DB::table('users')->insert([
+                'name' => 'user' ,
                 'profile_image' => 'https://placehold.jp/50x50.png',
-                'email' => 'test' .$i .'@gmail.com',
+                'email' => 'test' .'@gmail.com',
                 'password' => Hash::make('12345678'),
                 'remember_token' => str::random(20),
                 'created_at' => now(),
                 'updated_at' => now()
             ]);
-        }
+        
     }
 }
