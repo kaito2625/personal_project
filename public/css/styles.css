@@ -11,10 +11,10 @@ body {
 
 .my-navbar {
   align-items: center;
-  background: #0099ff;
+  background: #BBFFFF;
   display: flex;
   height: 6rem;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 0 2%;
   margin-bottom: 3rem;
 }
@@ -46,4 +46,8 @@ a.my-navbar-item:hover {
 .form-control[disabled],
 .form-control[readonly] {
   background-color: #fff;
+}
+
+.btn btn-default{
+  justify-content: center;
 }
