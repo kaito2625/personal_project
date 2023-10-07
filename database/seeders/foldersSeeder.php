@@ -17,6 +17,7 @@ class foldersSeeder extends Seeder
      */
     public function run()
     {
+
         $titles = ['プライベート', '仕事'];
         
         
@@ -31,4 +32,4 @@ class foldersSeeder extends Seeder
         
       }
     }
-}
+
