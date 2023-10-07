@@ -9,6 +9,7 @@
           <link rel="stylesheet" href="/css/styles.css">
     </head>
     <body>
+        <x-app-layout>
         <header>
             <nav class="my-navbar">
                 <a class="my-navbar-brand">ToDo List</a>
@@ -55,4 +56,6 @@
                 minDate: new Date()
             });
         </script>
+        </x-app-layout>
     </body>
+</html>

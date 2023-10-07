@@ -8,7 +8,8 @@
         <link rel="stylesheet" href="/css/styles.css">
     </head>
     <body>
-        <header>
+        <x-app-layout>
+            <header>
             <nav class="my-navbar">
                 <a class="my-navbar-brand">ToDo List</a>
             </nav>
@@ -37,5 +38,6 @@
                 </div>
             </div>
         </main>
+        </x-app-layout>
     </body>
 </html>
