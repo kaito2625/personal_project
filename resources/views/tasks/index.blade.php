@@ -10,7 +10,7 @@
     <body>
         <header>
             <nav class="my-navbar">
-                <a class="my-navbar-brand" href="/">ToDo list</a>
+                <a class="my-navbar-brand">ToDo List</a>
             </nav>
         </header>
         <main>
@@ -20,12 +20,12 @@
                         <nav class="panel panel-default">
                             <div class="panel panel-heading">フォルダ</div>
                             <div class="panel-body">
-                                <a href="#" class="btn btn-default btn-block">フォルダを追加する</a>
+                                <a href="" class="btn btn-default btn-block">フォルダを追加する</a>
                             </div>
                             <div class="list-group">
                                 @foreach($folders as $folder)
                                 <div class="list-group-item">
-                                    {{ $folder->title }}
+                                    <a href='/folders/{{ $folder->id }}/tasks'>{{ $folder->title }}</a>
                                 </div>
                                 @endforeach
                             </div>

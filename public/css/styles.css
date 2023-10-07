@@ -11,10 +11,10 @@ body {
 
 .my-navbar {
   align-items: center;
-  background: #0099ff;
+  background: #BBFFFF;
   display: flex;
   height: 6rem;
-  justify-content: center;
+  justify-content: left;
   padding: 0 2%;
   margin-bottom: 3rem;
 }
