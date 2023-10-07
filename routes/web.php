@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TaskController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+
+Route::get('/folders', [TaskController::class, 'index']);
+Route::get('/folders/{folder}/tasks', [TaskController::class, 'show']);
+Route::get('/folders/{folder}/tasks/create', [TaskController::class, 'create']);
+Route::post('/tasks',[TaskController::class, 'store']);
