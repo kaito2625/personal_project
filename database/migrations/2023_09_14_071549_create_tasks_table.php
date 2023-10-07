@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('tasks', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->unsignedInteger('folder_id');
             $table->string('title', 100);
             $table->integer('status')->default(1);
@@ -22,9 +22,7 @@ return new class extends Migration
             $table->softDeletes();
             $table->timestamps();
             
-            $table->foreign('folder_id')
-                 ->references('id')
-                 ->on('folders');
+           
         });
     }
 
