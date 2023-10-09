@@ -32,6 +32,7 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
+
 Route::get('/folders', [TaskController::class, 'index'])->name('index');
 Route::get('/folders/{folder}/tasks', [TaskController::class, 'show']);
 Route::get('/folders/{folder}/tasks/create', [TaskController::class, 'create']);

@@ -16,7 +16,7 @@ class favoritesSeeder extends Seeder
     public function run()
     {
         for ($i = 2; $i <= 20; $i++){
-            favorites::class([
+            favorites::create([
                 'user_id' => 1,
                 'tweet_id' => $i
             ]);

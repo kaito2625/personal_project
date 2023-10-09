@@ -56,6 +56,7 @@
                 minDate: new Date()
             });
         </script>
+
         </x-app-layout>
     </body>
 </html>
