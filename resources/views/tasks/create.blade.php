@@ -9,6 +9,7 @@
           <link rel="stylesheet" href="/css/styles.css">
     </head>
     <body>
+        <x-app-layout>
         <header>
             <nav class="my-navbar">
                 <a class="my-navbar-brand">ToDo List</a>
@@ -35,6 +36,9 @@
                                     <div class="text-right">
                                         <input type="submit" class="btn-primary" value="store"/>
                                     </div>
+                                    <div class="text-center">
+                                        <a href="/folders/{{ $folder->id }}/tasks">戻る</a>
+                                    </div>
                                 </form>
                             </div>
                         </nav>
@@ -52,4 +56,7 @@
                 minDate: new Date()
             });
         </script>
+
+        </x-app-layout>
     </body>
+</html>

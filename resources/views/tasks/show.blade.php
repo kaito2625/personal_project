@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="/css/styles.css">
     </head>
      <body>
+        <x-app-layout>
         <header>
             <nav class="my-navbar">
                 <a class="my-navbar-brand">ToDo List</a>
@@ -18,7 +19,6 @@
                 <div class="row">
                     <div class="col col-md-4">
                         <nav class="panel panel-default">
-                             
                             <div class="panel panel-heading">{{ $folder->title }}</div>
                             <div class="panel-body">
                                 <a href="/folders/{{ $folder->id }}/tasks/create" class="btn btn-default btn-block">タスクを追加する</a>
@@ -43,7 +43,7 @@
                                 </td>
                                 <td>
                                     <div class="button">
-                                        <a href="" class="btn-primary">完了</a>
+                                        <a href="" class="btn-default">完了</a>
                                     </div>
                                 </td>
                                 <td><a href="">編集</a></td>
@@ -51,8 +51,10 @@
                             @endforeach
                         </tbody>
                     </table>
+                    <a href="/folders" class="btn btn-default">戻る</a>
                 </div>
             </div>
         </main>
+        </x-app-layout>
     </body>
 </html>
