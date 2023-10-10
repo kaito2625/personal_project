@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TaskController;
+use App\Http\Controllers\FolderController;
 
 
 /*
@@ -34,6 +35,8 @@ require __DIR__.'/auth.php';
 
 
 Route::get('/folders', [TaskController::class, 'index'])->name('index');
+Route::get('folders/create', [FolderController::class, 'create']);
+Route::post('/folders/store', [FolderController::class, 'store']);
 Route::get('/folders/{folder}/tasks', [TaskController::class, 'show']);
 Route::get('/folders/{folder}/tasks/create', [TaskController::class, 'create']);
 Route::post('/tasks',[TaskController::class, 'store']);
