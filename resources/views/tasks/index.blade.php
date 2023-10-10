@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>To DO list</title>
+        <title>ToDO list</title>
         <link rel="stylesheet" href="/css/styles.css">
     </head>
     <body>
@@ -21,7 +21,7 @@
                         <nav class="panel panel-default">
                             <div class="panel panel-heading">フォルダ</div>
                             <div class="panel-body">
-                                <a href="" class="btn btn-default btn-block">フォルダを追加する</a>
+                                <a href="/folders/create" class="btn btn-default btn-block">フォルダを追加する</a>
                             </div>
                             <div class="list-group">
                                 @foreach($folders as $folder)

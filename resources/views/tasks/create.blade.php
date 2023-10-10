@@ -34,7 +34,7 @@
                                     </div>
                                     <input type="hidden" value="{{ $folder->id }}" name="folder_id"/>
                                     <div class="text-right">
-                                        <input type="submit" class="btn-primary" value="store"/>
+                                        <input type="submit" class="btn-primary" value="送信"/>
                                     </div>
                                     <div class="text-center">
                                         <a href="/folders/{{ $folder->id }}/tasks">戻る</a>
