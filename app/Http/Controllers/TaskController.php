@@ -30,7 +30,6 @@ class TaskController extends Controller
     }
     
     public function edit(Folder $folder, Tasks $task){
-        
         return view('tasks.edit')->with(['folder' => $folder, 'tasks' => $task]);
     }
     
@@ -40,5 +39,10 @@ class TaskController extends Controller
         $task->due_date = $request->due_date;
         $task->save();
         return redirect('/folders/'.$request->folder_id.'/tasks');
+    }
+    
+    public function delete(Folder $folder, Tasks $task){
+        $task->delete();
+        return redirect('/folders/'.$folder->id.'/tasks');
     }
 }

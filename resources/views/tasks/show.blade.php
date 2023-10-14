@@ -43,7 +43,11 @@
                                 </td>
                                 <td>
                                     <div class="button">
-                                        <a href="" class="btn-default">完了</a>
+                                        <form onsubmit="return confirm('本当に削除しますか？')" action="/folders/{{ $folder->id }}/tasks/{{ $task->id }}" id="form_{{ $task->id }}" method="post">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="default-button" onclick="deleteTask({{ $task->id }})">完了</button>
+                                        </form>
                                     </div>
                                 </td>
                                 <td><a href="/folders/{{ $folder->id }}/tasks/{{ $task->id }}/edit">編集</a></td>
