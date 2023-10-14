@@ -46,7 +46,7 @@
                                         <a href="" class="btn-default">完了</a>
                                     </div>
                                 </td>
-                                <td><a href="">編集</a></td>
+                                <td><a href="/folders/{{ $folder->id }}/tasks/{{ $task->id }}/edit">編集</a></td>
                             </tr>
                             @endforeach
                         </tbody>

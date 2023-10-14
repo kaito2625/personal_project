@@ -40,3 +40,5 @@ Route::post('/folders/store', [FolderController::class, 'store']);
 Route::get('/folders/{folder}/tasks', [TaskController::class, 'show']);
 Route::get('/folders/{folder}/tasks/create', [TaskController::class, 'create']);
 Route::post('/tasks',[TaskController::class, 'store']);
+Route::get('/folders/{folder}/tasks/{task}/edit', [TaskController::class, 'edit']);
+Route::put('/folders/{folder}/tasks/{task}', [TaskController::class, 'update']);

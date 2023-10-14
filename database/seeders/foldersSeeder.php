@@ -32,4 +32,4 @@ class foldersSeeder extends Seeder
         
       }
     }
-
+}
