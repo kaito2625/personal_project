@@ -7,6 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Folder extends Model
 {
+    public function getByLimit(int $limit_count = 10){
+        return $this->orderBy('updated_at', 'asc')->get();
+    }
+    
     protected $fillable = [
         'title',
         'id'

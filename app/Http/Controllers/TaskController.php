@@ -11,7 +11,7 @@ use App\Http\Requests\CreateTask;
 class TaskController extends Controller
 {
     public function index(Folder $folders){
-        return view('tasks.index')->with(['folders' => $folders->get()]);
+        return view('tasks.index')->with(['folders' => $folders->getByLimit()]);
     }
     
     public function show(Folder $folder, Tasks $tasks){

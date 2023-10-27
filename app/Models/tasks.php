@@ -8,7 +8,11 @@ use SoftDeletes;
 
 class tasks extends Model
 {
-    public function folders(){
+    public function getByLimit(int $limit_count = 20){
+        return $this->orderBy('updated_at', 'asc')->get();
+    }
+   
+   public function folders(){
         return $this->hasmany(Folder::class);
     }
     
