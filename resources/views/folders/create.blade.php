@@ -28,7 +28,7 @@
                                         <input type="text" class="form-control" name="title" id="title"/>
                                     </div>
                                     <div class="text-right">
-                                        <input type="submit" class="btn-primary" value="送信"/>
+                                        <input type="submit" class="btn btn-default" value="送信"/>
                                     </div>
                                     <div class="text-center">
                                         <a href="/folders">戻る</a>
